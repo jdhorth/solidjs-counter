@@ -1,8 +1,9 @@
 import { createSignal, createEffect } from "solid-js";
 
+const [count, setCount] = createSignal(0);
 
 export default function Counter() {
-    const [count, setCount] = createSignal(0);
+
 
     function add() {
         setCount(count() + 1);
